@@ -9,6 +9,7 @@ public class AddToFields extends Base {
 		driver.navigate().to("https://selenium.qabible.in/simple-form-demo.php");
 		WebElement x = driver.findElement(By.xpath("//input[@id='value-a']"));
 		x.sendKeys("67");
+		System.out.println(x.isEnabled());
 		WebElement y = driver.findElement(By.xpath("//input[@id='value-b']"));
 		y.sendKeys("7");
 		WebElement button = driver.findElement(By.xpath("//button[@id='button-two']"));
